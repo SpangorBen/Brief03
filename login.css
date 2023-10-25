@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    background: url(imgs/night_hill.gif) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    font-size: 3rem;
+    color: #102B50;
+    text-align: center;
+}
+
+.container{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #080c49af;
+    
+}
+
+section{
+    position: absolute;
+    width: 65%;
+    height: 70vh;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(218, 209, 209, 0.3) 0px 18px 50px 10px;
+
+}
+
+.left{
+    /* position: fixed; */
+    height: 100%;
+    width: 50%;
+    /* left: 0; */
+    background-color: #e8e8e8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    
+}
+
+.info{
+    /* margin-top: 1rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sign-in .left .forget{
+    font-size: 18px;
+    /* margin-bottom: 1rem; */
+    color: #102B50;
+}
+
+.put{
+    border: none;
+    background-color: #D9D9D9;
+    padding-block: .8rem;
+    padding-right: 5rem;
+    padding-left: .6rem;
+    border-radius: 1rem;
+    /* margin-bottom: 1rem; */
+}
+
+
+.right{
+    background: url(imgs/night_hill.gif) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 50%;
+    /* background-color: #102B50; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.sign-in .right p{
+    font-size: 2.2rem;
+    width: 70%;
+    color: whitesmoke;
+    text-align: center;
+}
+
+/* Sign Up */
+
+.sign-up{
+    display: none;
+    /* display: flex; */
+}
+
+.left-up{
+    background: url(imgs/night_hill.gif) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.left-up p{
+    font-size: 1.6rem;
+    width: 70%;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.right-up{
+    background: whitesmoke;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 2rem; */
+    align-items: center;
+}
+
+.btn{
+    border: none;
+    color: white;
+    /* border: 1px solid #102B50; */
+    background-color: #102B50;
+    padding: .7rem 3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.valid{
+    /* border: none; */
+    background-color: #D9D9D9;
+    padding-block: .8rem;
+    padding-right: 5rem;
+    padding-left: .6rem;
+    border-radius: 1rem;
+    border: 2px solid green;
+}
+
+.invalid{
+    border: 2px solid red;
+    background-color: #D9D9D9;
+    padding-block: .8rem;
+    padding-right: 5rem;
+    padding-left: .6rem;
+    border-radius: 1rem;
+}
+
+@media (max-width:  700px){
+    section{
+        /* display: flex; */
+        flex-direction: column;
+        /* left: 3rem; */
+        /* padding-left: 0px; */
+        /* margin: 0rem auto; */
+        width: 80%;
+        height: 80vh;
+    }
+
+    .left{
+        width: 100%;
+        gap: .5rem;
+    }
+    .right{
+        width: 100%;
+        gap: .6rem;
+    }
+    .left-up{
+        gap: .5rem;
+        width: 100%;
+    }
+    .right-up{
+        gap: .5rem;
+        width: 100%;
+    }
+    h1{font-size: 2.8rem; padding: 1rem;}
+    .pp{font-size: 1rem; color: red;}
+    .btn{ margin-bottom: .5rem;}
+    .put{
+        padding-inline: .3rem;
+    }
+}
