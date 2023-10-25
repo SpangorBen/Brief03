@@ -63,12 +63,22 @@ label h3{
     border-radius: 1em;
     
 }
-/* 
-#puut{
-    padding-block: .8em;
-    padding-right: 11.8em;
-} */
 
 textarea{
     resize: none;
+}
+
+@media (max-width: 700px) {
+    .imgs{
+        display: none;
+    }
+    section{background-color: transparent;}
+    .contact{
+        margin-top: 8rem;
+        margin-left: 6rem;
+    }
+    .contact *{
+        font-size: 1rem;
+    }
+    .cont{padding-right: 4rem;}
 }
